@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<screensaver name="gaussian" _label="Gaussian">
+
+  <command arg="-root"/>
+
+  <select id="mode">
+   <option id="0" _label="Random" arg-set="-mode 0"/>
+   <option id="1" _label="Ball drop" arg-set="-mode 1"/>
+   <option id="2" _label="Lightning strike" arg-set="-mode 2"/>
+   <option id="3" _label="Convolution" arg-set="-mode 3"/>
+  </select>
+
+  <number id="delay" type="slider" arg="-delay %"
+          _label="Speed" _low-label="Slow" _high-label="Fast"
+          low="0" high="250000" default="10000"
+          convert="invert"/>
+
+  <_description>
+Demonstrates the Central Limit Theorem.
+
+Written by John Lindal; 2007.
+  </_description>
+</screensaver>
